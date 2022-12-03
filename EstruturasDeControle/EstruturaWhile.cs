@@ -30,8 +30,8 @@ namespace CursoCSharp.EstruturasDeControle
                 if (numeroSecreto == palpite)
                 {
                     numeroEncontrado = true;
-                    var corAnterior = Console.ForegroundColor;
-                    Console.ForegroundColor = ConsoleColor.Green;
+                    var corAnterior = Console.ForegroundColor; // Guarda a cor anterior
+                    Console.ForegroundColor = ConsoleColor.Green; // Deixa a cor do texto verde
                     Console.WriteLine("Número encontrado em {0} tentativas!", tentativas);
                     Console.ForegroundColor = corAnterior;
                 }
